@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "LTQQOpenAPI"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "LTQQOpenAPI use for LTGameSDK."
 
   # This description is used to generate tags and improve search results.
@@ -116,10 +116,10 @@ Pod::Spec.new do |s|
   #
 
   # s.framework  = "SomeFramework"
-  # s.frameworks = "SomeFramework", "AnotherFramework"
+  s.frameworks = "Foundation", "UIKit","Security","SystemConfiguration","CoreGraphics","CoreTelephony"
 
   # s.library   = "iconv"
-  # s.libraries = "iconv", "xml2"
+  s.libraries = "libiconv", "libsqlit.3", "libz"
 
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
