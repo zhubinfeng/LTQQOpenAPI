@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "LTQQOpenAPI"
-  s.version      = "0.0.4"
+  s.version      = "0.0.5"
   s.summary      = "LTQQOpenAPI use for LTGameSDK."
 
   # This description is used to generate tags and improve search results.
@@ -62,8 +62,8 @@ Pod::Spec.new do |s|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-  s.platform     = :ios
-  # s.platform     = :ios, "5.0"
+  # s.platform     = :ios
+  s.platform     = :ios, "9.0"
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
@@ -130,7 +130,9 @@ Pod::Spec.new do |s|
 
   # s.requires_arc = true
 
-  # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
+  s.xcconfig = {
+    'VALID_ARCHS' =>  'arm64 x86_64',
+  }
   # s.dependency "JSONKit", "~> 1.4"
 
 end
