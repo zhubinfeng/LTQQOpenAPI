@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "LTQQOpenAPI"
-  s.version      = "0.0.5"
+  s.version      = "0.0.6"
   s.summary      = "LTQQOpenAPI use for LTGameSDK."
 
   # This description is used to generate tags and improve search results.
@@ -128,11 +128,9 @@ Pod::Spec.new do |s|
   #  where they will only apply to your library. If you depend on other Podspecs
   #  you can include multiple dependencies to ensure it works.
 
-  # s.requires_arc = true
+  s.requires_arc = true
 
-  s.xcconfig = {
-    'VALID_ARCHS' =>  'arm64 x86_64',
-  }
+  s.xcconfig = { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/LTQQOpenAPI/TencentOpenAPI"' }
   # s.dependency "JSONKit", "~> 1.4"
 
 end
